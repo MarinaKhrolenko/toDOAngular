@@ -1,0 +1,12 @@
+
+  <div>
+  <input class='createitem' type='text' [(ngModel)]='title'>
+   <select class='createitem' [(ngModel)]='selectedPriority' >
+    <option>Important and Urgent</option>
+    <option> Important and Not Urgent</option>
+    <option>Not Important and Urgent</option>
+  </select>
+  <button class='createitem' type="button" (click)='createTitle()'>ADD</button>
+  <button class='createitem' type="button" (click)='clearInfo()'>CLEAR</button>
+ <p id='validation'></p>
+</div>

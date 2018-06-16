@@ -1,0 +1,17 @@
+.list{
+    margin-top:20px;
+    border:3px solid blue;
+    text-align: center;
+    width:50%;
+    margin: 20px auto 20px auto;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+        
+   }
+
+
+
+  

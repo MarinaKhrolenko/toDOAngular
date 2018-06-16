@@ -1,0 +1,3 @@
+<app-create-item (addingItem)='addNewItem($event)'></app-create-item>
+<app-list-of-items [toDoItemList]='toDoItemList' (removed)="onRemove($event)" (edited)="onEdit($event)"></app-list-of-items>
+

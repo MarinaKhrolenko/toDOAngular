@@ -1,0 +1,12 @@
+<div [class.done]='item.done'>
+  <div *ngIf='!edit'>
+  <input (change)='done(item)' type="checkbox">{{item.title}}
+  <b>{{item.priority}}</b>
+  <button (click)="onEdit(item.done)">Edit</button>
+  <button (click)="onDelete(item.id)">Delete</button>
+</div>
+ <div *ngIf='edit'>
+  <input #editItem type="text" value={{item.title}}>
+  <button (click)="onSaveEdit(editItem.value)">Save</button> 
+</div>
+</div>

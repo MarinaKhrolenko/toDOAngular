@@ -1,0 +1,8 @@
+<div class='list'>
+<p *ngIf='!toDoItemList.length'>Here will be your toDO list!!!</p> 
+<ul *ngFor='let item of toDoItemList'>
+  <li>
+      <app-to-do-item [item]="item" (removed)="onRemove($event)" (edited)="onEdit($event)"></app-to-do-item>
+  </li>
+</ul>
+</div>
